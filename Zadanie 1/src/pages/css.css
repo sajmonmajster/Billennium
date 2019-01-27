@@ -1,0 +1,48 @@
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'header header'
+                        'menu container'
+                        'footer footer';
+    grid-template-columns: 1fr 4fr ;
+    grid-template-rows: 50px auto 70px;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background: red;
+}
+
+.menu {
+    grid-area: menu;
+    background: green;
+}
+
+.container {
+    grid-area: container;
+    background: blue;
+}
+
+.footer {
+    grid-area: footer;
+    background: black;
+    color: white;
+}
+
+.navi-buttons {
+    display: grid;
+    grid-template-areas: 'button button button button button';
+    grid-column-gap: 20px;
+}
+
+a:link {
+    color:yellow;
+  } 
+a:hover {
+    color: crimson;
+}
